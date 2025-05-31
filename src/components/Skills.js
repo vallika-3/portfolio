@@ -13,7 +13,11 @@ const skillsData = [
   { name: 'React.js', percentage: 90, category: 'Frontend' },
   { name: 'JavaScript', percentage: 85, category: 'Frontend' },
   { name: 'Node.js', percentage: 60, category: 'Backend' },
+<<<<<<< HEAD
   { name: 'Express.js', percentage: 60, category: 'Backend' },
+=======
+  { name: 'Express.js', percentage: 55, category: 'Backend' },
+>>>>>>> 5bd5e79 (Updated portfolio with latest changes)
   { name: 'MongoDB', percentage: 75, category: 'Database' },
   { name: 'Oracle SQL', percentage: 55, category: 'Database' },
   { name: 'Python', percentage: 50, category: 'Backend' },
