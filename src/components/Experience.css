@@ -1,0 +1,257 @@
+:root {
+  /* Light Mode Variables */
+  --light-bg: #ffffff;
+  --light-bg-alt: #f8f9fa;
+  --light-text-primary: #000000;
+  --light-text-secondary: #000000;
+  --light-border: rgba(0, 0, 0, 0.1);
+  --light-shadow: rgba(0, 0, 0, 0.1);
+  --light-primary-color: #86A3B8;
+  --light-primary-hover: #6f8fa4;
+
+  /* Dark Mode Variables (default if .dark-mode is not applied) */
+  --dark-bg: #121820;
+  --dark-bg-alt: #1f2937;
+  --dark-text-primary: #e0e6f1;
+  --dark-text-secondary: #a1aabb;
+  --dark-border: rgba(134, 163, 184, 0.3);
+  --dark-shadow: rgba(0, 0, 0, 0.7);
+  --dark-primary-color: #86A3B8;
+  --dark-primary-hover: #6f8fa4;
+}
+
+/* Base styles for light mode */
+.experience-section {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, var(--light-bg) 0%, var(--light-bg-alt) 100%);
+  text-align: center;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 2.4em;
+  color: var(--light-text-primary);
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Experience Cards Container */
+.experience-cards-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Experience Card */
+.experience-card {
+  background: var(--light-bg-alt); /* Light background for card */
+  border-radius: 16px;
+  border: 1px solid var(--light-border);
+  box-shadow: 0 12px 35px var(--light-shadow);
+  padding: 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  color: var(--light-text-primary);
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15); /* Light mode hover shadow */
+  border-color: rgba(0, 0, 0, 0.2); /* Light mode hover border */
+}
+
+/* Header Section */
+.experience-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.company-initial-circle {
+  width: 56px;
+  height: 56px;
+  background-color: var(--light-primary-color);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.company-initial-circle span {
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  font-size: 1.5em;
+  color: var(--light-text-primary);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.company-name {
+  font-size: 1.1em;
+  color: var(--light-primary-color);
+  text-decoration: none;
+  margin-bottom: 4px;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.company-name:hover {
+  color: var(--light-primary-hover);
+  text-decoration: underline;
+}
+
+.duration {
+  font-size: 0.95em;
+  color: var(--light-text-secondary);
+}
+
+/* Responsibilities List */
+.responsibilities-list {
+  list-style: disc;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.responsibilities-list li {
+  font-size: 1em;
+  color: var(--light-text-secondary);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+.responsibilities-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Dark Mode Overrides --- */
+body.dark-mode .experience-section {
+  background: linear-gradient(180deg, var(--dark-bg) 0%, var(--dark-bg-alt) 100%);
+}
+
+body.dark-mode .section-title {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .experience-card {
+  background: rgba(23, 34, 54, 0.85); /* Dark background for card */
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--dark-border);
+  box-shadow: 0 12px 35px var(--dark-shadow);
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .experience-card:hover {
+  box-shadow: 0 18px 40px rgba(134, 163, 184, 0.4);
+  border-color: rgba(134, 163, 184, 0.6);
+}
+
+body.dark-mode .company-initial-circle {
+  background-color: var(--dark-primary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .job-title {
+  color: var(--dark-text-primary);
+}
+
+body.dark-mode .company-name {
+  color: var(--dark-primary-color);
+}
+
+body.dark-mode .company-name:hover {
+  color: var(--dark-primary-hover);
+}
+
+body.dark-mode .duration {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .responsibilities-list li {
+  color: var(--dark-text-secondary);
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  .company-initial-circle {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+  }
+
+  .company-initial-circle span {
+    font-size: 1.4em;
+  }
+
+  .job-title {
+    font-size: 1.3em;
+  }
+
+  .company-name,
+  .duration {
+    font-size: 0.95em;
+  }
+
+  .responsibilities-list {
+    padding-left: 20px;
+  }
+
+  .responsibilities-list li {
+    font-size: 0.95em;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .company-initial-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .company-initial-circle span {
+    font-size: 1.2em;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+  }
+}

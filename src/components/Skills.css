@@ -1,0 +1,191 @@
+/* Basic resets */
+:root {
+  --bg-light: #f0f4f8;
+  --bg-dark: #121212;
+  --text-light: #222;
+  --text-dark: #eee;
+  --primary: #86A3B8; /* Indigo */
+  --glass-bg-light: rgba(255, 255, 255, 0.15);
+  --glass-border-light: rgba(255, 255, 255, 0.3);
+  --glass-shadow-light: rgba(31, 38, 135, 0.1);
+
+  --glass-bg-dark: rgba(255, 255, 255, 0.05);
+  --glass-border-dark: rgba(255, 255, 255, 0.1);
+  --glass-shadow-dark: rgba(0, 0, 0, 0.3);
+}
+
+body.light-theme {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark-theme {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.technical-skills {
+  padding: 2rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.technical-skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+/* Category filter buttons */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--primary);
+  color: white;
+  outline: none;
+}
+
+.filter-btn.active {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.8rem;
+  margin: 0 1.5rem; /* left & right margin */
+}
+
+/* Glassmorphism card */
+.skill-card.glass {
+  background: var(--glass-bg-light);
+  border-radius: 1.5rem;
+  border: 1.5px solid var(--glass-border-light);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px var(--glass-shadow-light);
+  padding: 1.6rem 1.8rem;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+body.dark-theme .skill-card.glass {
+  background: var(--glass-bg-dark);
+  border: 1.5px solid var(--glass-border-dark);
+  box-shadow: 0 8px 32px var(--glass-shadow-dark);
+  color: var(--text-dark);
+}
+
+.skill-card.glass:hover {
+  transform: translateY(-8px);
+}
+
+/* Skill header */
+.skill-header h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+/* Progress bar container */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+body.dark-theme .progress-bar-container {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Progress bar itself */
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 10px 0 0 10px;
+  transition: width 0.5s ease;
+}
+
+/* Percentage text */
+.percentage {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+  color: inherit;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .technical-skills {
+    padding: 1rem 1.5rem;
+  }
+
+  .skills-grid {
+    margin: 0 0.5rem;
+  }
+
+  .skill-card.glass {
+    padding: 1.2rem 1.4rem;
+  }
+}
+.skills-slider-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem 2rem; /* row-gap and column-gap */
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 1.5rem;
+}
+
+.skills-slider-wrapper .skill-card {
+  width: 220px; /* fixed width */
+  scroll-snap-align: start;
+  cursor: grab;
+  user-select: none;
+}
+
+/* Hide scrollbar */
+.skills-slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.skills-slider-wrapper {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.skills-slider-wrapper:active {
+  cursor: grabbing;
+}

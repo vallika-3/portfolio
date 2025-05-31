@@ -1,0 +1,132 @@
+:root {
+  --primary: #86A3B8;
+  --dark-bg: #1e1e2f;
+  --dark-text: #f0f0f0;
+  --light-bg: #ffffff;
+  --light-text: #333;
+  --accent: #b0c9dc;
+  --hover-accent: #7295aa;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+/* Section Styling */
+.about {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+/* Card Styling */
+.about-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 24px var(--shadow);
+  transition: background 0.3s ease;
+}
+
+body.dark-mode .about-card {
+  background: rgba(30, 30, 47, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-description,
+.education {
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+
+/* Description Block */
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+body.dark-mode .about-description p {
+  color: #ddd;
+}
+
+/* Extra Info */
+.about-info p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+}
+
+body.dark-mode .about-info p {
+  color: #bbb;
+}
+
+/* Education Block */
+.education h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.3rem;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h4 {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+body.dark-mode .education-item h4 {
+  color: #eee;
+}
+
+.education-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.2rem 0;
+}
+
+body.dark-mode .education-item p {
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .education h3 {
+    font-size: 1.5rem;
+  }
+}
