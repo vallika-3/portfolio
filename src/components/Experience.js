@@ -1,12 +1,13 @@
 import React from 'react';
-import './Experience.css'; // Import the CSS file for styling
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import './Experience.css'; 
 
 const experienceData = [
   {
     initial: 'C', 
     jobTitle: 'Frontend Developer Intern',
     company: 'Ceeras IT Services',
-    companyLink: 'https://www.example.com/ceeras',
+    companyLink: 'https://www.ceeras.in',
     duration: 'June 2024 - August 2024',
     responsibilities: [
       'Designed production-level UI components with React.js',
@@ -15,7 +16,6 @@ const experienceData = [
       'Implemented responsive design patterns and modern CSS techniques',
     ],
   },
-  
 ];
 
 const Experience = () => {
@@ -36,8 +36,9 @@ const Experience = () => {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="company-name"
+                  aria-label={`Visit ${exp.company} website`}
                 >
-                  {exp.company}
+                  {exp.company} <FaExternalLinkAlt size={12} style={{ marginLeft: '4px' }} />
                 </a>
                 <p className="duration">{exp.duration}</p>
               </div>
