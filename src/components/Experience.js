@@ -3,10 +3,10 @@ import './Experience.css'; // Import the CSS file for styling
 
 const experienceData = [
   {
-    initial: 'C', // Initial for the company name (Ceeras)
+    initial: 'C', 
     jobTitle: 'Frontend Developer Intern',
     company: 'Ceeras IT Services',
-    companyLink: 'https://www.example.com/ceeras', // Replace with actual company link if available
+    companyLink: 'https://www.example.com/ceeras',
     duration: 'June 2024 - August 2024',
     responsibilities: [
       'Designed production-level UI components with React.js',
