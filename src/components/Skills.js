@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import './Skills.css';
 import { motion } from 'framer-motion';
 
-// Animation variants for fade in + slide up
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
 };
 
-// Extended skills data
+
 const skillsData = [
   { name: 'React.js', percentage: 90, category: 'Frontend' },
   { name: 'JavaScript', percentage: 85, category: 'Frontend' },
   { name: 'Node.js', percentage: 60, category: 'Backend' },
-<<<<<<< HEAD
+
   { name: 'Express.js', percentage: 60, category: 'Backend' },
-=======
+
   { name: 'Express.js', percentage: 55, category: 'Backend' },
->>>>>>> 5bd5e79 (Updated portfolio with latest changes)
+
   { name: 'MongoDB', percentage: 75, category: 'Database' },
   { name: 'Oracle SQL', percentage: 55, category: 'Database' },
   { name: 'Python', percentage: 50, category: 'Backend' },
@@ -39,7 +39,7 @@ const skillsData = [
   { name: 'Performance Optimization', percentage: 70, category: 'Others' },
 ];
 
-// Categories including new ones
+
 const categories = [
   'All',
   'Frontend',
