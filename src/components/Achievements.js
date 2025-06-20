@@ -3,11 +3,11 @@ import './Achievements.css'; // Your enhanced CSS file
 
 const achievementsData = [
   {
-    logo: '', // Replace with actual path to your logo
+    logo: '', 
     title: 'SIH Finalist',
     description:
       'National Finalist in Smart India Hackathon for developing an innovative Anti-Doping Case Management Tool — recognized for its real-world applicability and impact.',
-    year: '2023',
+    year: '2024',
     tag: 'Hackathon',
   },
   {
