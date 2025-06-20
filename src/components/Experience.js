@@ -15,18 +15,7 @@ const experienceData = [
       'Implemented responsive design patterns and modern CSS techniques',
     ],
   },
-  // You can add more experience entries here following the same structure
-  // {
-  //   initial: 'A',
-  //   jobTitle: 'Software Engineer',
-  //   company: 'Another Tech Co',
-  //   companyLink: 'https://www.example.com/another',
-  //   duration: 'Sept 2023 - May 2024',
-  //   responsibilities: [
-  //     'Developed scalable backend services',
-  //     'Optimized database queries',
-  //   ],
-  // },
+  
 ];
 
 const Experience = () => {
