@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 
 const projectsData = [
-  // Add more projects here...
+  
   {
     type: 'Hackathon',
     isFeatured: true,
