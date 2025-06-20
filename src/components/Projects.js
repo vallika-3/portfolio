@@ -36,8 +36,8 @@ const projectsData = [
   title: 'Spotify Frontend Clone',
   description: 'A static clone of Spotify’s web UI built using HTML, CSS, and JavaScript. Focused on layout replication and responsive design.',
   technologies: ['HTML', 'CSS', 'JavaScript'],
-  codeLink: 'https://github.com/vallika-3/spotify-clone', // update this if needed
-  demoLink: 'https://your-live-spotify-clone.vercel.app', // update with your deployed link
+  codeLink: 'https://github.com/vallika-3/spotify-clone',
+  demoLink: 'https://your-live-spotify-clone.vercel.app', 
 },
 {
   type: 'Frontend',
@@ -45,8 +45,8 @@ const projectsData = [
   title: 'Amazon Clone',
   description: 'Frontend clone of Amazon’s homepage created using HTML and CSS, showcasing pixel-perfect layout and styling.',
   technologies: ['HTML', 'CSS'],
-  codeLink: 'https://github.com/vallika-3/amazon-clone', // update this if needed
-  demoLink: 'https://your-live-amazon-clone.vercel.app', // or wherever it's hosted
+  codeLink: 'https://github.com/vallika-3/amazon-clone', 
+  demoLink: 'https://your-live-amazon-clone.vercel.app', 
 },
   // ...add more projects
 ];
