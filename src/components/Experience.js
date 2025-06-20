@@ -2,7 +2,8 @@ import React from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import './Experience.css'; 
 
-const experienceData = [
+
+ const experienceData = [
   {
     initial: 'C', 
     jobTitle: 'Frontend Developer Intern',
