@@ -36,7 +36,7 @@ function Hero() {
 
           <div className="hero-buttons">
             <a
-              href="https://drive.google.com/file/d/1D8yUbf5XMBYdjm7JTkDnnGOMSr7KWuk9/view?usp=share_link"
+              href="https://drive.google.com/file/d/1KyI69TaFGIt1uDVKnzTRCOoAsTFIXY9i/view?usp=share_link"
               download
               className="btn btn-primary"
             >

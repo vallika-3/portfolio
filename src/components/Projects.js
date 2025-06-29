@@ -19,7 +19,7 @@ const projectsData = [
     description: 'Full-stack MERN web app for planning travel routes with intelligent recommendations and real-time updates.',
     technologies: ['React', 'Express', 'MongoDB', 'REST APIs'],
     codeLink: 'https://github.com/vallika-3/Travel',
-    demoLink: 'https://github.com/vallika-3/Travel',
+    demoLink: 'https://travel-frontend-oug2vvupm-vallika-3s-projects.vercel.app',
   },
   {
     type: 'Frontend',
@@ -36,8 +36,8 @@ const projectsData = [
   title: 'Spotify Frontend Clone',
   description: 'A static clone of Spotify’s web UI built using HTML, CSS, and JavaScript. Focused on layout replication and responsive design.',
   technologies: ['HTML', 'CSS', 'JavaScript'],
-  codeLink: 'https://github.com/vallika-3/spotify-clone',
-  demoLink: 'https://your-live-spotify-clone.vercel.app', 
+  codeLink: 'https://github.com/vallika-3/spotify-clone', 
+  demoLink: 'https://github.com/vallika-3/spotify-clone', 
 },
 {
   type: 'Frontend',
@@ -48,7 +48,7 @@ const projectsData = [
   codeLink: 'https://github.com/vallika-3/amazon-clone', 
   demoLink: 'https://your-live-amazon-clone.vercel.app', 
 },
-  // ...add more projects
+  
 ];
 
 const Projects = () => {

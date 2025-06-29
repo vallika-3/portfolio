@@ -11,9 +11,9 @@ const achievementsData = [
     tag: 'Hackathon',
   },
   {
-    title: 'LeetCode 200+',
+    title: 'LeetCode 250+',
     description:
-      'Solved over 200 coding problems on LeetCode, demonstrating strong problem-solving skills and consistency in data structures and algorithms.',
+      'Solved over 250 coding problems on LeetCode, demonstrating strong problem-solving skills and consistency in data structures and algorithms.',
     year: '2024',
     tag: 'DSA Practice',
   },
